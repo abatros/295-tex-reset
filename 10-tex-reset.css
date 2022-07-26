@@ -1,0 +1,170 @@
+
+.block {
+  display: block;   /* to remove inline */
+}
+
+.flex {
+  display: flex;   /* to remove inline */
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rm {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rg {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.im {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ig {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* possible conflicts */
+
+body {
+  box-sizing: border-box;
+}
+
+
+hbox, .hbox {
+  display: inline-flex;
+  flex-direction: row;
+  white-space:nowrap; /* override */
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+
+.qc {justify-content: center}
+.qr {justify-content: flex-end}
+
+
+
+hbox.wrap {
+  white-space: normal;
+}
+
+hbox.qc {
+  justify-content: center;
+}
+
+
+
+hbox.qr {
+  justify-content: flex-end;
+}
+
+hbox.qj {
+  justify-content: space-between;
+  width:100%;
+}
+
+hbox.align-center, hbox.vcenter {
+  align-items: center;
+}
+
+hbox.vbot {
+  align-items: flex-end;
+}
+
+hbox.vtop {
+  align-items: flex-start;
+}
+
+hbox.baseline, hbox.vbaseline {
+  align-items: baseline; /* default */
+}
+
+
+hbox.to-hsize {
+  width:100%;
+}
+
+
+.zpad {
+  padding:0;
+}
+
+.zmargin {
+  margin:0;
+}
+
+
+.space-equally, .space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+
+.to-hsize {
+  width:100%;
+}
+
+vbox, .vbox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width:100%;
+}
+
+vbox.qc {
+  align-items: center;
+}
+
+vbox.ql {
+  align-items: flex-start;
+}
+
+vbox.qr {
+  align-items: flex-end;
+}
+
+vbox.qj {
+  align-items: stretch;
+}
+
+vbox.self-center {
+  align-self: center;
+}
+
+
+vbox.wrap {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: no-wrap;
+}
+
+
+hrule {
+  display: block;
+  border-top: 1px solid black;
+  width:100%;
+  height:1px;
+  margin: 0.5em 0;
+}
