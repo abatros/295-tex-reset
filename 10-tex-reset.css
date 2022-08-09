@@ -157,7 +157,7 @@ vbox.wrap {
 }
 
 .no-wrap {
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 
 
